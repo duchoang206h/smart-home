@@ -1,19 +1,21 @@
 [[source]]
-name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
-
-[dev-packages]
+name = "pypi"
 
 [packages]
 fastapi = "*"
-motor = "*"
-uvicorn = "*"
-bcrypt = "*"
+sqlalchemy = "*"
+python-dotenv = "*"
+pydantic = "*"
 passlib = "*"
-email-validator = "*"
+datetime = "*"
+uvicorn = "*"
+mysql-connector-python = "*"
+python-jose = {extras = ["cryptography"], version = "*"}
 python-multipart = "*"
-sendgrid = "*"
+
+[dev-packages]
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"
