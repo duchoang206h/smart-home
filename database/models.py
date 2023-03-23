@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Boolean, Float
+from sqlalchemy import Column, Integer, String, Boolean, Float, JSON
 from .database import Base
 
 class User(Base):
@@ -13,4 +13,4 @@ class Device(Base):
     name = Column(String(50), unique=True, index=True)
     type = Column(String(50))
     status= Column(Boolean, default=False)
-    data_value = Column(Float)
+    data_value = Column(JSON, default=None)
