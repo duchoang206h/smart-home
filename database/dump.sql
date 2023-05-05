@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.28, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.32, for Linux (x86_64)
 --
 -- Host: localhost    Database: smh
 -- ------------------------------------------------------
--- Server version	8.0.28
+-- Server version	8.0.32
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -39,7 +39,7 @@ CREATE TABLE `devices` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `ix_devices_name` (`name`),
   KEY `ix_devices_id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -48,7 +48,7 @@ CREATE TABLE `devices` (
 
 LOCK TABLES `devices` WRITE;
 /*!40000 ALTER TABLE `devices` DISABLE KEYS */;
-INSERT INTO `devices` VALUES (1,'Den 1','1',1,NULL),(2,'Đèn 2','1',0,NULL),(3,'Quạt 1','2',1,NULL),(4,'Den 4','1',0,NULL),(5,'Den 5','1',0,NULL),(8,'Nhiet do do am','4',0,'{\"hum\": 0.04, \"tem\": 20.0}');
+INSERT INTO `devices` VALUES (1,'Đèn 1','1',1,NULL),(2,'Đèn 2','1',0,NULL),(3,'Đèn 3','1',0,NULL),(4,'Quạt','2',0,NULL),(5,'Cửa','3',0,NULL),(8,'Nhiet do do am','4',0,'{\"hum\": 0.04, \"tem\": 20.0}'),(11,NULL,NULL,NULL,NULL),(12,NULL,NULL,NULL,NULL),(13,'',NULL,NULL,NULL),(14,NULL,'',NULL,NULL),(15,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `devices` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -88,4 +88,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-03-17 17:28:14
+-- Dump completed on 2023-05-05 10:44:12
