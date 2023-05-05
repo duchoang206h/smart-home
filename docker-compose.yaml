@@ -16,7 +16,7 @@ services:
     ports:
       - "3306:3306"
   smh:
-    image: duchoang206h/smh:latest
+    image: smh:latest
     restart: always
     depends_on:
       - database
