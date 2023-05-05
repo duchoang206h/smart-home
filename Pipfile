@@ -14,6 +14,11 @@ uvicorn = "*"
 mysql-connector-python = "*"
 python-jose = {extras = ["cryptography"], version = "*"}
 python-multipart = "*"
+librosa = "*"
+tensorflow = "*"
+numpy = "*"
+matplotlib = "*"
+scikit-learn = "*"
 
 [dev-packages]
 
